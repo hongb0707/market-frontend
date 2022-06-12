@@ -1,0 +1,65 @@
+.section1 {
+  padding: 120px;
+}
+.section1 > .gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px 20px;
+}
+.gridContainer > div {
+  margin: 0 auto;
+}
+.section1 > h1 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+}
+.smallBanner {
+  margin: 0 12px;
+}
+.smallBanner > div {
+  background-color: #254970;
+  color: #f7f7f7;
+  width: 100%;
+  max-width: 1380px;
+  min-width: 420px;
+  margin: 78px auto;
+  padding: 30px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.smallBanner > div {
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 40px;
+}
+/* 빅데스크탑 */
+
+@media screen and (max-width: 1799px) {
+  /* 데스크탑 */
+}
+
+@media screen and (max-width: 1199px) {
+  /* 타블렛 가로 */
+}
+@media screen and (max-width: 899px) {
+  /* 모바일 가로, 타블렛 세로 */
+}
+
+@media screen and (max-width: 599px) {
+  .smallBanner span {
+    text-align: center;
+  }
+  .smallBanner button {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .smallBanner > div {
+    min-width: 300px;
+    font-size: 15px;
+    flex-direction: column;
+  }
+}

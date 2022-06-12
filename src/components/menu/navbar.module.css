@@ -1,0 +1,68 @@
+.navBar a {
+  text-decoration: none;
+}
+.navBar {
+  position: fixed;
+  background-color: #244970;
+  width: 100%;
+  z-index: 10000;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.logo {
+  line-height: 60px;
+}
+.logo > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+.links {
+  display: flex;
+}
+.links > ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin-right: 70px;
+}
+.links > ul > li > a {
+  color: #558dc9;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 300ms ease;
+}
+.links > ul > li > a:hover {
+  color: #ffffff;
+}
+.actions {
+  line-height: 60px;
+  display: flex;
+  gap: 12px;
+}
+.actions a {
+  color: #eee;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 300ms ease;
+}
+.actions a:hover {
+  color: #fff;
+}
+.actions > img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid rgb(236, 236, 236);
+}
+.signup {
+  color: white;
+}
+.user span {
+  font-size: 15px;
+  font-weight: 500;
+}

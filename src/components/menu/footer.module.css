@@ -1,0 +1,87 @@
+.footer {
+  background-color: #254970;
+  padding: 70px;
+  color: #f7f7f7;
+  position: relative;
+}
+.section {
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.logo > span {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contents {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 630px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contents > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.contents > ul > li {
+  display: block;
+}
+.contents > ul > li:not(:last-child)::after {
+  content: "|";
+  margin: 0 7px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .email {
+  transform: translateY(-5px);
+  margin-left: 4px;
+  display: inline-block;
+}
+.footerNotice {
+  color: #7baee0;
+  font-size: 15px;
+}
+/* 빅데스크탑 */
+
+@media screen and (max-width: 1799px) {
+  /* 데스크탑 */
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    position: absolute;
+    top: 17px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .section {
+    flex-direction: column;
+  }
+  .contact,
+  .contents {
+    font-size: 14px;
+  }
+  .footerNotice {
+    font-size: 13px;
+  }
+  .footer {
+    padding: 70px 30px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  /* 모바일 세로 */
+}

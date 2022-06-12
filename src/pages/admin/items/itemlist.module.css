@@ -1,0 +1,15 @@
+.article {
+  display: grid;
+}
+.container {
+  border: 7px solid #bbb;
+  background-color: #254970;
+  border-radius: 20px;
+  margin: 7px;
+  padding: 7px;
+}
+.image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 20px;
+}

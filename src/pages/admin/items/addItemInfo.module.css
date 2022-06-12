@@ -1,0 +1,140 @@
+.article {
+  display: grid;
+  padding: 7px;
+  gap: 12px;
+  grid-template-rows: 40% 60%;
+}
+.article > section {
+  border: 7px solid #bbb;
+  background-color: #254970;
+  border-radius: 20px;
+}
+section.items {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+.card {
+  position: relative;
+  width: 200px;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  border: 3px solid rgb(214, 214, 214);
+  overflow: hidden;
+  margin: auto;
+  transition: opacity 300ms ease;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.card > input {
+  display: none;
+}
+.card img:hover {
+  cursor: pointer;
+}
+.itemListNav {
+  position: absolute;
+  height: 20px;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.describtion {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 1;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+}
+.describtion span {
+  font-size: 13px;
+  margin-left: 3px;
+}
+.add {
+  display: flex;
+  padding: 30px;
+  gap: 5px;
+}
+.previewBox {
+  overflow: scroll;
+  display: flex;
+  gap: 12px;
+  width: 80%;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+}
+.preview {
+  width: 250px;
+}
+.previewdefault {
+  border-radius: 20px;
+  height: 300px;
+  margin: auto;
+}
+.iteminfoimagebox {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.iteminfoimagebox label {
+  margin: auto;
+  width: 230px;
+  background-color: white;
+  padding: 20px;
+  background-color: #254970;
+  box-shadow: 4px 4px 10px #193757, -4px -4px 10px #396493 !important;
+  border-radius: 10px;
+  color: #f7f7f7;
+}
+.iteminfoimagebox label:hover {
+  cursor: pointer;
+}
+/* 빅데스크탑 */
+
+@media screen and (max-width: 1799px) {
+  section.add {
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .card {
+    width: 170px;
+  }
+  .describtion span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .card {
+    width: 130px;
+  }
+  section.add {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 899px) {
+  .card {
+    width: 110px;
+  }
+  section.add {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  /* 모바일 세로 */
+}

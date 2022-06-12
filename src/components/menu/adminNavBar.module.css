@@ -1,0 +1,64 @@
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  position: sticky;
+  float: left;
+  background-color: #254970;
+  margin: 5px;
+  border: 7px solid #bbb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.logo {
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px 0 32px 0;
+  text-transform: uppercase;
+}
+.nav a,
+.navElement {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 300ms ease;
+  padding: 5px;
+  padding: 20px;
+}
+.navElement {
+  color: #91c9f9;
+}
+.nav a:hover {
+  color: #1976d2;
+}
+
+.nav li {
+  list-style: none;
+}
+.dropDown {
+  transition: 300ms ease;
+  gap: 10px !important;
+}
+.dropDown a {
+  padding: 0 0 23px 12px;
+}
+.dropDown:hover {
+  background-color: #153251;
+  border-radius: 15px;
+}
+.dropDown:hover .dropHide {
+  display: block;
+}
+.dropHide {
+  display: none;
+  padding-left: 7px;
+}

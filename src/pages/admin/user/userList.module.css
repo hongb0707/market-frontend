@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+.subContainer {
+  width: 100%;
+  padding: 7px;
+}
